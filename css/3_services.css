@@ -1,0 +1,265 @@
+
+/*SERVICES*/
+/*SERVICES*/
+/*SERVICES*/
+/*SERVICES*/
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services__items {
+	width: 33.33333%;
+	position: relative;
+	
+	padding: 0 35px 25px 85px;
+	margin-bottom: 30px;
+}
+
+.services__items--border {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.services__icon {
+	position: absolute;
+	top: 5px;
+	left: 25px;
+	z-index: 1;
+}
+
+.services__title {
+	margin-bottom: 10px;
+	
+	color: #333333;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.services__text {
+	font-size: 15px;
+	color: #999;
+}
+
+
+
+/*DEVICES*/
+/*DEVICES*/
+/*DEVICES*/
+/*DEVICES*/
+
+.devices {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.devices__item {
+
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.devices__item--iphone {
+	position: absolute;
+	bottom: -75px;
+	right: -110px;
+	z-index: 1;
+	max-width: 200px;
+
+}
+
+/*WHAT WE DO*/
+/*WHAT WE DO*/
+/*WHAT WE DO*/
+/*WHAT WE DO*/
+
+.wedo {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.wedo__item {
+	width: 50%;
+	padding: 0 15px;
+}
+
+.wedo__img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*ACCORDION*/
+
+.accordion__item {
+	border: 1px solid #e5e5e5;
+	margin-bottom: 10px;
+}
+
+.accordion__item.active
+.accordion__content {
+	display: block;
+}
+
+
+.accordion__item.active
+.accordion__header {
+	border-bottom-color: #e5e5e5;
+}
+
+.accordion__item.active
+.accordion__header:after {
+	transform: translateY(-50%)
+	rotate(-45deg);
+	margin-top: 5px;
+}
+
+
+.accordion__header {
+	padding: 15px 20px 15px 65px;
+	position: relative;
+
+	border-bottom: 1px solid transparent;
+	cursor: pointer;
+}
+
+.accordion__header:after {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	z-index: 1;
+
+	transform: translateY(-50%)
+	rotate(135deg);
+}
+
+.accordion__icon {
+	position: absolute;
+	top: 50%;
+	left:20px;
+	z-index: 1;
+
+	transform: translateY(-50%);
+}
+
+.accordion__content {
+	padding: 15px 20px;
+	display: none;
+
+	color: #999999;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.accordion__title {
+	color: #333333;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+
+@media (max-width: 990px) {
+
+	/*SERVICES*/
+
+	.services__items {
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+	.services__items--border {
+		border-bottom: 0;
+	}
+}
+
+@media (max-width: 770px) {
+	/*SECTION*/
+
+	.section {
+		padding: 40px 0;
+	}
+
+	.section--devices {
+		padding-bottom: 0;
+	}
+
+	.devices__item {
+		margin-bottom: -40px;
+	}
+
+	.devices__item--iphone {
+		bottom: -30px;
+	}
+
+	/*WEDO*/
+
+	.wedo__img {
+	display: none;
+	}
+
+	.wedo__item {
+		width: 100%;
+	}
+
+	/*WORKS*/
+
+	.works {
+		flex-wrap: wrap;
+	}
+
+	.works__col {
+		flex: none;
+		width: 50%;
+	}
+}
+
+@media (max-width: 575px) {
+	/*SERVICES*/
+
+	.services {
+		justify-content: center;
+	}
+
+	.services__items {
+		width: 100%;
+		max-width: 400px;
+		padding-right: 0;
+	}
+
+	/*DEVICES*/
+
+	.devices {
+		max-width: 300px;
+	}
+
+	.devices__item--iphone {
+		width: 180px;
+		right: -80px;
+		bottom: -5px;
+	}
+
+	/*WORKS*/
+
+	.works {
+		flex-wrap: wrap;
+	}
+
+	.works__col {
+		flex: none;
+		width: 100%;
+	}
+
+}

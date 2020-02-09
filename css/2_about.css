@@ -1,0 +1,246 @@
+/*SECTION*/
+/*SECTION*/
+/*SECTION*/
+/*SECTION*/
+
+.section {
+	padding: 40px 0;
+	
+}
+
+.section__header {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto 60px;
+
+	text-align: center;
+}
+
+.section__subtitle {
+	font-family: "Kaushan Script";
+	font-size: 24px;
+	color: #333;
+}
+
+.section__title {
+	color: #333333;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.section__title:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin: 40px auto;
+
+	background-color: #f38181;
+}
+
+.section__text {
+	color: #999999;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+.section--devices {
+	margin-bottom: 40px;
+	padding-bottom: 0;
+	
+	background:
+	url("../img/nature.jpg") 
+	center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	}
+
+/*ABOUT_US*/
+/*ABOUT_US*/
+/*ABOUT_US*/
+/*ABOUT_US*/
+
+.about {
+	margin-top: 80px;
+	margin-bottom: 30px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about__item {
+	width: 30%;
+	position: relative;
+
+	background-color: #95e1d3;
+}
+
+.about__item:hover .about__img {
+	transform: translate3d(-10px, -10px, 0);
+}
+
+.about__item:hover .about__img img {
+	opacity: .1;
+}
+
+.about__item:hover .about__text {
+	opacity: 1;
+}
+
+.about__img {
+	background: linear-gradient(to bottom,
+	#f38181, #fce38a);
+
+	transition: transform .2s linear;
+}
+
+.about__img img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+	transition: opacity .1s linear;
+}
+
+
+
+.about__text {
+	width: 100%;
+
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	opacity: 0;
+
+	position: absolute;
+	top: 45%;
+	left: 0;
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+
+	transition: opacity .2s linear;
+}
+
+	/*STATISTICS*/
+	/*STATISTICS*/
+	/*STATISTICS*/
+	/*STATISTICS*/
+
+.statistics {
+
+	background-color: #95e1d3;
+}
+
+.stat {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.stat__item {
+	flex: 1 1 0; /* ЧТО ОЗНАЧАЕТ?*/
+	padding: 70px 25px;
+
+	border-left: 1px solid #b5eae0;
+
+	text-align: center;
+	color: #fff;
+}
+
+.stat__item:last-child {
+	border-right: 1px solid #b5eae0;
+}
+
+.stat__num {
+	margin-bottom: 10px;
+	
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.stat__text {
+	padding: 0;
+
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+
+
+@media (max-width: 990px) {
+	
+
+	
+
+
+}
+
+
+@media (max-width: 770px) {
+	/*ABOUT*/
+	/*ABOUT*/
+	/*ABOUT*/
+	.about__item {
+		width: 100%;
+		max-width: 380px;
+		margin-bottom: 30px;
+	}
+	
+	.about {
+    	margin-top: -10px;
+		justify-content: center;
+	}
+
+	.about__item:last-child {
+		margin-bottom: 0;
+	}
+	
+
+	/*STATISTICS*/ 
+
+
+	.stat__item {
+		flex: none;
+		width: 33.333333%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		border: 0;
+	}
+
+	.stat__item:last-child {
+		border-right: 0;
+	}
+
+	.stat {
+		justify-content: center;
+	}
+
+}
+
+@media (max-width: 575px) {
+	/*STAT*/
+	/*STAT*/
+	/*STAT*/
+
+	.stat__item {
+		width: 100%;
+
+		border-bottom: 1px solid #b5eae0
+	}
+
+	.stat__num {
+		font-size: 50px;
+	}
+
+
+
+
+}

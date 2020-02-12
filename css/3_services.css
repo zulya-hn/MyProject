@@ -112,7 +112,7 @@
 }
 
 .accordion__item.active
-.accordion__header:after {
+.accordion__header::after {
 	transform: translateY(-50%)
 	rotate(-45deg);
 	margin-top: 5px;
@@ -127,7 +127,7 @@
 	cursor: pointer;
 }
 
-.accordion__header:after {
+.accordion__header::after {
 	content: "";
 	display: block;
 	width: 16px;

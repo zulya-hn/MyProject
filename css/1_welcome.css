@@ -47,7 +47,7 @@ hr {
 }
 .container {
 	width: 100%;
-	max-width: 1230px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -99,7 +99,7 @@ hr {
 	background-color: #ffffff;
 }
 
-.welcome__suptitle{
+.welcome__subtitle{
 	margin-bottom: 20px;
 	color: #ffffff;
 	font-family: "Kaushan Script";
@@ -139,6 +139,7 @@ hr {
 }
 
 .header.fixed {
+	padding: 0;
 
 	background-color: #e98883;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -225,9 +226,13 @@ hr {
 	cursor: pointer;
 
 	position: absolute;
-	top: 20px;
+	top: 13px;
 	right: 30px;
 	z-index: 1;
+}
+
+.nav-toggle:focus {
+	outline: 0;
 }
 
 .nav-toggle__item {
@@ -340,7 +345,7 @@ hr {
 	
 	opacity: .5;
 
-	font-style: 18px;
+	font-size: 18px;
 	color: #FFF;
 	text-transform: uppercase;
 }
@@ -364,7 +369,7 @@ hr {
 }
 
 .slider__num {
-	font-style: 24px;
+	font-size: 24px;
 	font-weight: 700;
 }
 
@@ -374,7 +379,7 @@ hr {
 	/*WELCOME*/
 	/*WELCOME*/
 
-	.welcome__suptitle {
+	.welcome__subtitle {
 		font-size: 52px;
 	}
 
@@ -389,7 +394,7 @@ hr {
 	/*WELCOME*/
 	/*WELCOME*/
 
-	.welcome__suptitle {
+	.welcome__subtitle {
 		font-size: 52px;
 	}
 
@@ -408,7 +413,7 @@ hr {
 		min-height: 650px;
 	}
 	
-	.welcome__suptitle {
+	.welcome__subtitle {
 		font-size: 40px;
 	}
 
@@ -453,6 +458,10 @@ hr {
 		background-color: #e98883;
 	}
 
+	.nav.active {
+		display: block;
+	}
+
 	.nav__link {
 		display: block;
 		margin: 0;
@@ -460,9 +469,9 @@ hr {
 	}
 
 	.nav__link:after {
-		margin-top: 0px;
+		margin-top: 0;
 	    left: 17px;
-	    width: 10%;
+	    width: 72px;
 	}
 
 
@@ -478,7 +487,7 @@ hr {
 	/*WELCOME*/
 	/*WELCOME*/
 
-	.welcome__suptitle {
+	.welcome__subtitle {
 		font-size: 25px;
 	}
 

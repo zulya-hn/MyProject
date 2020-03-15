@@ -68,13 +68,13 @@
 /*FOOTER*/
 
 .footer {
-	padding-top: 65px;
+	padding-top: 130px;
 	padding-right: 20px;
 	background-color: #f8f8f8;
 }
 
 .footer__inner {
-	padding-bottom: 65px;
+	padding-bottom: 115px;
 	justify-content: space-between;
 	display: flex;
 	margin: 0 -15px;
@@ -193,7 +193,7 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	line-height: 1.1;
-	color: #ccc
+	color: #ccc;
 	font-style: italic;
 	font-weight: 300;
 }
